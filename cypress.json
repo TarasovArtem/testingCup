@@ -1,1 +1,6 @@
-{}
+{
+    "viewportWidth": 1280,
+    "viewportHeight": 720,
+    "baseUrl": "https://testingcup.pgs-soft.com/",
+    "defaultCommandTimeout": 10000
+}
