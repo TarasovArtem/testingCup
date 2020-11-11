@@ -1,0 +1,25 @@
+{
+  "name": "testingcup",
+  "version": "1.0.0",
+  "description": "testing with Cypress and typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TarasovArtem"
+  },
+  "keywords": [
+    "hardcore88%"
+  ],
+  "author": "Artem Tarasov",
+  "license": "ISC",
+  "devDependencies": {
+    "@bahmutov/add-typescript-to-cypress": "^2.1.2",
+    "@cypress/webpack-preprocessor": "^5.4.11",
+    "cypress": "^5.6.0",
+    "ts-loader": "^8.0.11",
+    "typescript": "^4.0.5"
+  }
+}
