@@ -13,7 +13,7 @@ class MainPage {
     }
 
     getTaskList() {
-        cy.get('.task-list > .col-md-6 > a > h2')
+       return cy.get('.task-list > .col-md-6 > a > h2')
     }
 
 }

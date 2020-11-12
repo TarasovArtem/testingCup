@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 
 class Navigation {
-    navigation() {
+    mainPage() {
         return cy.visit('/');
     }
 }
