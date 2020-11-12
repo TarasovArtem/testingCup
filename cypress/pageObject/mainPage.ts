@@ -1,5 +1,6 @@
 /// <reference types="Cypress" />
 
+
 class MainPage {
  
     getLogoAsta() {
@@ -14,7 +15,12 @@ class MainPage {
 
     getTaskList() {
        return cy.get('.task-list > .col-md-6 > a > h2')
+    }    
+    
+    getZadanie1() {
+        return cy.contains('Zadanie 1');
     }
-
 }
+
+
 export default MainPage

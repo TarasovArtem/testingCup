@@ -1,24 +1,26 @@
 /// <reference types="Cypress" />
 
-import MainPage from '../../pageObject/mainPage';
-import Navigation from '../../pageObject/navigation';
+import {MainPage, Navigation } from '../../pageObject/index';
+
+
+
 
 
 describe('Main page', () => {
 
-    const po = new MainPage();
-    const navigation = new Navigation();
+    let mainPage = new MainPage();
+    
 
     beforeEach(() => {
 
-        navigation.mainPage()
+        mainPage = Navigation.mainPage()
     })
     it('Should show elements of main page', () => {
-        po.getLogoAsta().should('be.visible');
-        po.getLogoAstaLink().should('have.attr', 'href', 'https://asta.pgs-soft.com/');
-        po.getLogoPgs().should('be.visible');
+        mainPage.getLogoAsta().should('be.visible');
+        mainPage.getLogoAstaLink().should('have.attr', 'href', 'https://asta.pgs-soft.com/');
+        mainPage.getLogoPgs().should('be.visible');
 
-       po.getTaskList().should(($tasklist: any) => {
+        mainPage.getTaskList().should(($tasklist: any) => {
             expect($tasklist.eq(0)).to.contain('Zadanie 1')
             expect($tasklist.eq(1)).to.contain('Zadanie 2')
             expect($tasklist.eq(2)).to.contain('Zadanie 3')
@@ -30,8 +32,8 @@ describe('Main page', () => {
             expect($tasklist.eq(8)).to.contain('Zadanie 9')
             expect($tasklist.eq(9)).to.contain('Zadanie 10')
           });
-
         
+        mainPage.getZadanie1().click();   
 
     })
 })
