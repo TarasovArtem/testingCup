@@ -1,8 +1,6 @@
 /// <reference types="Cypress" />
 
-import {MainPage, Navigation } from '../../pageObject/index';
-
-
+import { MainPage, Navigation } from '../../pageObject/index';
 
 
 
