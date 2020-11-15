@@ -30,6 +30,11 @@ describe('Zadanie 1 Page', () => {
       taskPage.getCameraFormControl().clear().type('0');
       taskPage.getAddCameraBtn().should('be.visible').click();
 
+      taskPage.getBasketSummary().should(($basketSummary: any) => {
+        expect($basketSummary.eq(0)).to.contain('Łączna ilość produktów:')
+        expect($basketSummary.eq(1)).to.contain('Do zapłaty:')
+      });
+
       ce.getMainReset().click();
     })
 
