@@ -6,7 +6,7 @@ class CommonElemetns {
     }
   
     getClose() {
-        return cy.get('.close');
+        return cy.get('.close', {timeout: 10000});
     }
           
     getMainReset() {

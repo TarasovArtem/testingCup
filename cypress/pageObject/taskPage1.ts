@@ -32,14 +32,7 @@ class TaskPage1 {
   
     getBasketSummary() {
       return cy.get('.basket-summary > p');
-    }
-
-
-
-
-
-
-  
+    } 
 
 }
 export default TaskPage1
