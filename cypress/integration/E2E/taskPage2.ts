@@ -4,7 +4,7 @@ import { TaskPage2, Navigation } from '../../pageObject/index';
 import { CommonElemetns } from '../../pageObject/index';
 
 
-describe('Zadanie 1 Page', () => {
+describe('Zadanie 2 Page', () => {
   
   let taskPage = new TaskPage2();
   let ce = new CommonElemetns();
