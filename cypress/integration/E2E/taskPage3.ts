@@ -31,7 +31,7 @@ describe('Zadanie 3 Page', () => {
 
       cy.fixture('img/tor.jpg').as('tor')
       taskPage.getUploadfileBtn().then(function(el) {
-      // convert the logo base64 string to a blob
+
       const blob = Cypress.Blob.base64StringToBlob(this.tor, 'image/jpg')
     
       const file = new File([blob], '../../img/tor.jpg', { type: 'image/jpg' })
