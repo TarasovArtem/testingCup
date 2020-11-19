@@ -16,17 +16,27 @@ class TaskPage3 {
   getInputName() {
     return cy.get('#in-name');
   }
+
   getInputSurname() {
     return cy.get('#in-surname');
   }
+
   getTextAreaNotes() {
     return cy.get('#in-notes');
   }
+
   getInputPhone() {
     return cy.get('#in-phone');
   }
+
   getSaveBtn() {
-    return cy.get('#save-btn')
+    return cy.get('#save-btn');
   }
+
+  getUploadfileBtn() {
+    return cy.get('#in-file');
+  }
+
+
 }
 export default TaskPage3
