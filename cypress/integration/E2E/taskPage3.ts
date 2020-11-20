@@ -28,31 +28,7 @@ describe('Zadanie 3 Page', () => {
     taskPage.getTextAreaNotes().clear().type(notes);  
     taskPage.getInputPhone().clear().type(phone);
     taskPage.getUploadfileBtn().click({force:true});
-
-      cy.fixture('img/tor.jpg').as('tor')
-      taskPage.getUploadfileBtn().then(function(el) {
-
-      const blob = Cypress.Blob.base64StringToBlob(this.tor, 'image/jpg')
-    
-      const file = new File([blob], '../../img/tor.jpg', { type: 'image/jpg' })
-      const list = new DataTransfer()
-    
-      list.items.add(file)
-      //const myFileList = list.files
-    
-      //el[0].files = myFileList
-      el[0].dispatchEvent(new Event('change', { bubbles: true }))
-    })
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    /*taskPage.getSaveBtn().click();*/
+    taskPage.getSaveBtn().click();
     /*ce.getMainReset().click();*/
   })
 
