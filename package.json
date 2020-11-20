@@ -10,9 +10,7 @@
     "type": "git",
     "url": "https://github.com/TarasovArtem"
   },
-  "keywords": [
-    "hardcore88%"
-  ],
+  
   "author": "Artem Tarasov",
   "license": "ISC",
   "devDependencies": {
