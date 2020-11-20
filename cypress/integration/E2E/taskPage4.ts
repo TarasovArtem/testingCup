@@ -6,25 +6,31 @@ describe('Zadanie 4 Page', () => {
   
   let taskPage = new TaskPage4();
   let ce = new CommonElemetns();
-  let name = 'Jack';
-  let email = 'jack@sparrow.com';
-  let phone = '600-100-200';
+  let text = 'Wiadomość została wysłana';
   
 
   beforeEach(() => {
     taskPage = Navigation.taskPage4();
   })
 
-  it('Should test of Zadanie 4', () => {
+  it('Should Clicking the Apply button opens a new browser window with the form', () => {
+
     ce.getOpenDetails().click();
     ce.getClose().click();
 
     taskPage.getApplyBtn().click();
-  
+  })
+
+  it('Should be complete the form and send the form', () => {
+
     taskPage = Navigation.taskPage4_frame();
-    taskPage.getInputName().type(name);
-    taskPage.getInputEmail().type(email);
-    taskPage.getInputPhone().type(phone);  
+    ce.getUserData().then((user) => {
+      taskPage.getInputName().type(user.name);
+      taskPage.getInputEmail().type(user.email);
+      taskPage.getInputPhone().type(user.phone);
+    })  
+    taskPage.getSaveBtn().click();
+    taskPage.getTexth1().should('have.text', text);
 
   })
 })

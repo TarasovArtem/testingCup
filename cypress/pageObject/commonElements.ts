@@ -1,8 +1,12 @@
 /// <reference types="Cypress" />
 
 class CommonElemetns {
+    getUserData() {
+        return cy.fixture('userData');
+    } 
+    
     getOpenDetails() {
-        return cy.get('.open-details')
+        return cy.get('.open-details');
     }
   
     getClose() {
@@ -10,7 +14,7 @@ class CommonElemetns {
     }
           
     getMainReset() {
-        return cy.get('#main-reset')  
+        return cy.get('#main-reset'); 
     }
   
 }

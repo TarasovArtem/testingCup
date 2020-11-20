@@ -15,5 +15,13 @@ class TaskPage4 {
   getInputPhone() {
     return cy.get(':nth-child(3) > .col-md-8 > #name');
   }
+
+  getSaveBtn() {
+    return cy.get('#save-btn');
+  }
+
+  getTexth1() {
+    return cy.get('h1');
+  }
 }
 export default TaskPage4

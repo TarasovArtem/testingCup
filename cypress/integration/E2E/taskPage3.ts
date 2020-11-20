@@ -6,11 +6,7 @@ describe('Zadanie 3 Page', () => {
   
   let taskPage = new TaskPage3();
   let ce = new CommonElemetns();
-  let name = 'Jack';
-  let surname = 'Sparrow';
-  let notes = 'I am Test Engineer';
-  let phone = '+49 123 4567890'
-
+  
   beforeEach(() => {
     taskPage = Navigation.taskPage3();
   })
@@ -23,11 +19,18 @@ describe('Zadanie 3 Page', () => {
     taskPage.getItemForm().click({ force: true });
     taskPage.getCaretRight().click({ force: true });
     taskPage.getEditMode().click({ force: true });
-    taskPage.getInputName().clear().type(name);
-    taskPage.getInputSurname().clear().type(surname)
-    taskPage.getTextAreaNotes().clear().type(notes);  
-    taskPage.getInputPhone().clear().type(phone);
-    taskPage.getUploadfileBtn().click({force:true});
+    ce.getUserData().then((user) => {
+      taskPage.getInputName().clear().type(user.name);
+      taskPage.getInputSurname().clear().type(user.surname)
+      taskPage.getTextAreaNotes().clear().type(user.notes); 
+      taskPage.getInputPhone().clear().type(user.phone);
+    })
+    
+    taskPage.getUploadfileBtn().click()
+    cy.fixture('tor').as('torJpg')
+
+    
+    
     taskPage.getSaveBtn().click();
     /*ce.getMainReset().click();*/
   })
