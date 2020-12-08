@@ -7,11 +7,10 @@ This application was also used at the first mini-competition in automated testin
 during the agile & Automation days conference, which took place on November 16-17, 2015 in Krakow.
 
 # Automated tests with Cypress #
+* Node.js: https://nodejs.org/en/download/
+* Visual Studio Code: https://code.visualstudio.com/download
 
-install node.js
-
-npm init - create package.jason file
-
-npm install cypress --save-dev - installed cypress for your project
-
-npx cypress run - run your first test
+Download or clone this repo
+Install dependencies by running the following command in terminal (from inside your app directory i.e. where package.json is located): 
+* npm install
+* npx cypress run  ( Run your first test )
