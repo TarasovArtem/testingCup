@@ -1,0 +1,111 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-12-08T20:06:17.790Z",
+    "end": "2020-12-08T20:06:31.471Z",
+    "duration": 13681,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "65ef2cac-a3c4-4d75-a673-3396eeaa60b2",
+      "title": "",
+      "fullFile": "cypress\\integration\\E2E\\taskPage3.ts",
+      "file": "cypress\\integration\\E2E\\taskPage3.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "db28d948-b9cb-4790-9ea7-5e87772f8a54",
+          "title": "Zadanie 3 Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should test of Zadanie 3",
+              "fullTitle": "Zadanie 3 Page Should test of Zadanie 3",
+              "timedOut": null,
+              "duration": 13609,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "ce.getOpenDetails().click();\nce.getClose().click();\ntaskPage.getMenuBtn().should('be.visible').click();\ntaskPage.getItemForm().click({ force: true });\ntaskPage.getCaretRight().click({ force: true });\ntaskPage.getEditMode().click({ force: true });\nce.getUserData().then(function (user) {\n    taskPage.getInputName().clear().type(user.name);\n    taskPage.getInputSurname().clear().type(user.surname);\n    taskPage.getTextAreaNotes().clear().type(user.notes);\n    taskPage.getInputPhone().clear().type(user.phone);\n});\ntaskPage.getUploadfileBtn().click();\ncy.fixture('tor').as('torJpg');\ntaskPage.getSaveBtn().click();\n/*ce.getMainReset().click();*/",
+              "err": {
+                "message": "CypressError: Timed out retrying: `cy.click()` failed because the center of this element is hidden from view:\n\n`<input id=\"in-file\" type=\"file\" accept=\"image/x-png, image/gif, image/jpeg\">`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying: `cy.click()` failed because the center of this element is hidden from view:\n\n`<input id=\"in-file\" type=\"file\" accept=\"image/x-png, image/gif, image/jpeg\">`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:161335:24)\n    at ensureDescendents (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:149885:8)\n    at ensureDescendentsAndScroll (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:149892:14)\n    at ensureElIsNotCovered (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:150026:5)\n    at runAllChecks (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:150172:52)\n    at retryActionability (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:150195:16)\n    at tryCatcher (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:10584:23)\n    at Function.Promise.attempt.Promise.try (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:7858:29)\n    at tryFn (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:165607:21)\n    at whenStable (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:165645:12)\n    at https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:165140:16\n    at tryCatcher (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:10584:23)\n    at Promise._settlePromiseFromHandler (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:8519:31)\n    at Promise._settlePromise (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:8576:18)\n    at Promise._settlePromise0 (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:8621:10)\n    at Promise._settlePromises (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:8701:18)\nFrom Your Spec Code:\n    at Context.eval (https://testingcup.pgs-soft.com/__cypress/tests?p=cypress\\integration\\E2E\\taskPage3.ts:38:37)",
+                "diff": null
+              },
+              "uuid": "a7341487-331c-4a27-acd7-966020ca820b",
+              "parentUUID": "db28d948-b9cb-4790-9ea7-5e87772f8a54",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a7341487-331c-4a27-acd7-966020ca820b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 13609,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -2,5 +2,16 @@
     "viewportWidth": 1280,
     "viewportHeight": 720,
     "baseUrl": "https://testingcup.pgs-soft.com/",
-    "defaultCommandTimeout": 10000
+    "defaultCommandTimeout": 10000,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": true
+        }
+    }
 }

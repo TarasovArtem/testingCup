@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-08T20:06:40.794Z",
+    "end": "2020-12-08T20:06:43.505Z",
+    "duration": 2711,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ea09cdf3-279b-442b-81b4-afcc6611d235",
+      "title": "",
+      "fullFile": "cypress\\integration\\E2E\\taskPage4.ts",
+      "file": "cypress\\integration\\E2E\\taskPage4.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f404afd3-8a12-4324-8aa0-34c76ef60a36",
+          "title": "Zadanie 4 Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should Clicking the Apply button opens a new browser window with the form",
+              "fullTitle": "Zadanie 4 Page Should Clicking the Apply button opens a new browser window with the form",
+              "timedOut": null,
+              "duration": 1368,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "ce.getOpenDetails().click();\nce.getClose().click();\ntaskPage.getApplyBtn().click();",
+              "err": {},
+              "uuid": "70224669-9f18-4d8c-9ce0-96c957a1f54b",
+              "parentUUID": "f404afd3-8a12-4324-8aa0-34c76ef60a36",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should be complete the form and send the form",
+              "fullTitle": "Zadanie 4 Page Should be complete the form and send the form",
+              "timedOut": null,
+              "duration": 1314,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "taskPage = index_1.Navigation.taskPage4_frame();\nce.getUserData().then(function (user) {\n    taskPage.getInputName().type(user.name);\n    taskPage.getInputEmail().type(user.email);\n    taskPage.getInputPhone().type(user.phone);\n});\ntaskPage.getSaveBtn().click();\ntaskPage.getTexth1().should('have.text', text);",
+              "err": {},
+              "uuid": "b7915905-ea37-4c3d-b2ea-1a79c4a1cdc4",
+              "parentUUID": "f404afd3-8a12-4324-8aa0-34c76ef60a36",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "70224669-9f18-4d8c-9ce0-96c957a1f54b",
+            "b7915905-ea37-4c3d-b2ea-1a79c4a1cdc4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2682,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

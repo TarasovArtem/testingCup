@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-08T20:06:08.312Z",
+    "end": "2020-12-08T20:06:10.700Z",
+    "duration": 2388,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "da6dcf4f-d28e-47d3-be46-5db3cee8643a",
+      "title": "",
+      "fullFile": "cypress\\integration\\E2E\\taskPage2.ts",
+      "file": "cypress\\integration\\E2E\\taskPage2.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "687efd7b-8154-4216-9e27-df32d4242c8e",
+          "title": "Zadanie 2 Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should test of Zadanie 2",
+              "fullTitle": "Zadanie 2 Page Should test of Zadanie 2",
+              "timedOut": null,
+              "duration": 2368,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "ce.getOpenDetails().click();\nce.getClose().click();\ntaskPage.getSelectionPlaceholder().should('have.text', 'Proszę wybrać kategorie').click();\ntaskPage.getChooseProduct().should(function ($chooseProduct) {\n    expect($chooseProduct.eq(0)).to.contain('');\n    expect($chooseProduct.eq(1)).to.contain('Sport');\n    expect($chooseProduct.eq(2)).to.contain('Elektronika');\n    expect($chooseProduct.eq(3)).to.contain('Firma i usługi');\n});\ntaskPage.getInputChooseProduct().type('Sport{enter}');\ntaskPage.getSelectionArrow().click();\ntaskPage.getInputChooseProduct().clear().type('Elektronika{enter}');\ntaskPage.getSelectionArrow().click();\ntaskPage.getInputChooseProduct().clear().type('Firma i usługi{enter}');\nce.getMainReset().click();",
+              "err": {},
+              "uuid": "06831535-6128-43bd-bd04-49b0c4d9610d",
+              "parentUUID": "687efd7b-8154-4216-9e27-df32d4242c8e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "06831535-6128-43bd-bd04-49b0c4d9610d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2368,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

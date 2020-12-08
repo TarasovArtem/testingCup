@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-12-08T20:05:57.250Z",
+    "end": "2020-12-08T20:06:00.051Z",
+    "duration": 2801,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3be44d1f-bfbe-4db5-a4d9-e0d04e1fab4b",
+      "title": "",
+      "fullFile": "cypress\\integration\\E2E\\taskPage1.ts",
+      "file": "cypress\\integration\\E2E\\taskPage1.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "61c666a9-2fd5-4dac-9305-458869c0bef4",
+          "title": "Zadanie 1 Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should test of Zadanie 1",
+              "fullTitle": "Zadanie 1 Page Should test of Zadanie 1",
+              "timedOut": null,
+              "duration": 2784,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "ce.getOpenDetails().click();\nce.getClose().click();\ntaskPage.getGlassesFormControl().clear().type('15');\ntaskPage.getAddGlassesBtn().should('be.visible').click();\ntaskPage.getQuantityForGlasses().should('have.text', '15');\ntaskPage.getBallFormControl().clear().type('15');\ntaskPage.getAddBallBtn().should('be.visible').click();\ntaskPage.getCameraFormControl().clear().type('101');\ntaskPage.getAddCameraBtn().should('be.visible').click();\ntaskPage.getCameraFormControl().clear().type('0');\ntaskPage.getAddCameraBtn().should('be.visible').click();\ntaskPage.getBasketSummary().should(function ($basketSummary) {\n    expect($basketSummary.eq(0)).to.contain('Łączna ilość produktów:');\n    expect($basketSummary.eq(1)).to.contain('Do zapłaty:');\n});\nce.getMainReset().click();",
+              "err": {},
+              "uuid": "7d9076a3-800f-4971-83cd-4a354cd04760",
+              "parentUUID": "61c666a9-2fd5-4dac-9305-458869c0bef4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7d9076a3-800f-4971-83cd-4a354cd04760"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2784,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}
