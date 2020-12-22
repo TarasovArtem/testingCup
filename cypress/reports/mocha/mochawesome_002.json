@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-08T20:06:08.312Z",
-    "end": "2020-12-08T20:06:10.700Z",
-    "duration": 2388,
+    "start": "2020-12-18T09:05:51.845Z",
+    "end": "2020-12-18T09:05:55.120Z",
+    "duration": 3275,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "da6dcf4f-d28e-47d3-be46-5db3cee8643a",
+      "uuid": "6f086ec5-7d6e-4df0-84a7-04777bd89237",
       "title": "",
       "fullFile": "cypress\\integration\\E2E\\taskPage2.ts",
       "file": "cypress\\integration\\E2E\\taskPage2.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "687efd7b-8154-4216-9e27-df32d4242c8e",
+          "uuid": "93783380-fae5-484b-9b1d-685dca32cee4",
           "title": "Zadanie 2 Page",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should test of Zadanie 2",
               "fullTitle": "Zadanie 2 Page Should test of Zadanie 2",
               "timedOut": null,
-              "duration": 2368,
+              "duration": 3170,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "ce.getOpenDetails().click();\nce.getClose().click();\ntaskPage.getSelectionPlaceholder().should('have.text', 'Proszę wybrać kategorie').click();\ntaskPage.getChooseProduct().should(function ($chooseProduct) {\n    expect($chooseProduct.eq(0)).to.contain('');\n    expect($chooseProduct.eq(1)).to.contain('Sport');\n    expect($chooseProduct.eq(2)).to.contain('Elektronika');\n    expect($chooseProduct.eq(3)).to.contain('Firma i usługi');\n});\ntaskPage.getInputChooseProduct().type('Sport{enter}');\ntaskPage.getSelectionArrow().click();\ntaskPage.getInputChooseProduct().clear().type('Elektronika{enter}');\ntaskPage.getSelectionArrow().click();\ntaskPage.getInputChooseProduct().clear().type('Firma i usługi{enter}');\nce.getMainReset().click();",
               "err": {},
-              "uuid": "06831535-6128-43bd-bd04-49b0c4d9610d",
-              "parentUUID": "687efd7b-8154-4216-9e27-df32d4242c8e",
+              "uuid": "9fdaf72e-b463-4f25-8669-28238288c211",
+              "parentUUID": "93783380-fae5-484b-9b1d-685dca32cee4",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "06831535-6128-43bd-bd04-49b0c4d9610d"
+            "9fdaf72e-b463-4f25-8669-28238288c211"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2368,
+          "duration": 3170,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

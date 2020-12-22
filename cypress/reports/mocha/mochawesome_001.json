@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-08T20:05:57.250Z",
-    "end": "2020-12-08T20:06:00.051Z",
-    "duration": 2801,
+    "start": "2020-12-18T09:05:36.915Z",
+    "end": "2020-12-18T09:05:40.987Z",
+    "duration": 4072,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3be44d1f-bfbe-4db5-a4d9-e0d04e1fab4b",
+      "uuid": "59dec5f1-fbd9-4c4d-bafa-9813501b2e74",
       "title": "",
       "fullFile": "cypress\\integration\\E2E\\taskPage1.ts",
       "file": "cypress\\integration\\E2E\\taskPage1.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "61c666a9-2fd5-4dac-9305-458869c0bef4",
+          "uuid": "84147986-ab6c-4ad1-a273-7a4e8f4a0f87",
           "title": "Zadanie 1 Page",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should test of Zadanie 1",
               "fullTitle": "Zadanie 1 Page Should test of Zadanie 1",
               "timedOut": null,
-              "duration": 2784,
+              "duration": 4020,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "ce.getOpenDetails().click();\nce.getClose().click();\ntaskPage.getGlassesFormControl().clear().type('15');\ntaskPage.getAddGlassesBtn().should('be.visible').click();\ntaskPage.getQuantityForGlasses().should('have.text', '15');\ntaskPage.getBallFormControl().clear().type('15');\ntaskPage.getAddBallBtn().should('be.visible').click();\ntaskPage.getCameraFormControl().clear().type('101');\ntaskPage.getAddCameraBtn().should('be.visible').click();\ntaskPage.getCameraFormControl().clear().type('0');\ntaskPage.getAddCameraBtn().should('be.visible').click();\ntaskPage.getBasketSummary().should(function ($basketSummary) {\n    expect($basketSummary.eq(0)).to.contain('Łączna ilość produktów:');\n    expect($basketSummary.eq(1)).to.contain('Do zapłaty:');\n});\nce.getMainReset().click();",
               "err": {},
-              "uuid": "7d9076a3-800f-4971-83cd-4a354cd04760",
-              "parentUUID": "61c666a9-2fd5-4dac-9305-458869c0bef4",
+              "uuid": "39c864e9-2f23-42cd-9bc7-edd6d8f7ae3a",
+              "parentUUID": "84147986-ab6c-4ad1-a273-7a4e8f4a0f87",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7d9076a3-800f-4971-83cd-4a354cd04760"
+            "39c864e9-2f23-42cd-9bc7-edd6d8f7ae3a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2784,
+          "duration": 4020,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

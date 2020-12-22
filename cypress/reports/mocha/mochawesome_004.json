@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-08T20:06:40.794Z",
-    "end": "2020-12-08T20:06:43.505Z",
-    "duration": 2711,
+    "start": "2020-12-18T09:06:16.977Z",
+    "end": "2020-12-18T09:06:19.667Z",
+    "duration": 2690,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ea09cdf3-279b-442b-81b4-afcc6611d235",
+      "uuid": "b9cc6a0c-45c8-45f9-8d9b-dd9de7dbf98f",
       "title": "",
       "fullFile": "cypress\\integration\\E2E\\taskPage4.ts",
       "file": "cypress\\integration\\E2E\\taskPage4.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f404afd3-8a12-4324-8aa0-34c76ef60a36",
+          "uuid": "baa1935a-970a-4875-b510-67b867248f7e",
           "title": "Zadanie 4 Page",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should Clicking the Apply button opens a new browser window with the form",
               "fullTitle": "Zadanie 4 Page Should Clicking the Apply button opens a new browser window with the form",
               "timedOut": null,
-              "duration": 1368,
+              "duration": 1470,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "ce.getOpenDetails().click();\nce.getClose().click();\ntaskPage.getApplyBtn().click();",
               "err": {},
-              "uuid": "70224669-9f18-4d8c-9ce0-96c957a1f54b",
-              "parentUUID": "f404afd3-8a12-4324-8aa0-34c76ef60a36",
+              "uuid": "e38ee0f2-d7c9-474f-a4d3-ac5ea3e00740",
+              "parentUUID": "baa1935a-970a-4875-b510-67b867248f7e",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Should be complete the form and send the form",
               "fullTitle": "Zadanie 4 Page Should be complete the form and send the form",
               "timedOut": null,
-              "duration": 1314,
+              "duration": 1193,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "taskPage = index_1.Navigation.taskPage4_frame();\nce.getUserData().then(function (user) {\n    taskPage.getInputName().type(user.name);\n    taskPage.getInputEmail().type(user.email);\n    taskPage.getInputPhone().type(user.phone);\n});\ntaskPage.getSaveBtn().click();\ntaskPage.getTexth1().should('have.text', text);",
               "err": {},
-              "uuid": "b7915905-ea37-4c3d-b2ea-1a79c4a1cdc4",
-              "parentUUID": "f404afd3-8a12-4324-8aa0-34c76ef60a36",
+              "uuid": "5ff388a0-c446-4441-a286-f99ebecd5f1f",
+              "parentUUID": "baa1935a-970a-4875-b510-67b867248f7e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "70224669-9f18-4d8c-9ce0-96c957a1f54b",
-            "b7915905-ea37-4c3d-b2ea-1a79c4a1cdc4"
+            "e38ee0f2-d7c9-474f-a4d3-ac5ea3e00740",
+            "5ff388a0-c446-4441-a286-f99ebecd5f1f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2682,
+          "duration": 2663,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

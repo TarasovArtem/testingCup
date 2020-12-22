@@ -26,13 +26,8 @@ describe('Zadanie 3 Page', () => {
       taskPage.getInputPhone().clear().type(user.phone);
     })
     
-    taskPage.getUploadfileBtn().click()
-    cy.fixture('tor').as('torJpg')
-
-    
-    
     taskPage.getSaveBtn().click();
-    /*ce.getMainReset().click();*/
+    
   })
 
 })

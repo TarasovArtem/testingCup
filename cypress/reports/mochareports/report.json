@@ -2,14 +2,14 @@
   "stats": {
     "suites": 5,
     "tests": 6,
-    "passes": 5,
+    "passes": 6,
     "pending": 0,
-    "failures": 1,
-    "start": "2020-12-08T20:05:47.765Z",
-    "end": "2020-12-08T20:06:43.505Z",
-    "duration": 22803,
+    "failures": 0,
+    "start": "2020-12-18T09:05:22.307Z",
+    "end": "2020-12-18T09:06:19.667Z",
+    "duration": 15706,
     "testsRegistered": 6,
-    "passPercent": 83.33333333333333,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3be44d1f-bfbe-4db5-a4d9-e0d04e1fab4b",
+      "uuid": "59dec5f1-fbd9-4c4d-bafa-9813501b2e74",
       "title": "",
       "fullFile": "cypress\\integration\\E2E\\taskPage1.ts",
       "file": "cypress\\integration\\E2E\\taskPage1.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "61c666a9-2fd5-4dac-9305-458869c0bef4",
+          "uuid": "84147986-ab6c-4ad1-a273-7a4e8f4a0f87",
           "title": "Zadanie 1 Page",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should test of Zadanie 1",
               "fullTitle": "Zadanie 1 Page Should test of Zadanie 1",
               "timedOut": null,
-              "duration": 2784,
+              "duration": 4020,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "ce.getOpenDetails().click();\nce.getClose().click();\ntaskPage.getGlassesFormControl().clear().type('15');\ntaskPage.getAddGlassesBtn().should('be.visible').click();\ntaskPage.getQuantityForGlasses().should('have.text', '15');\ntaskPage.getBallFormControl().clear().type('15');\ntaskPage.getAddBallBtn().should('be.visible').click();\ntaskPage.getCameraFormControl().clear().type('101');\ntaskPage.getAddCameraBtn().should('be.visible').click();\ntaskPage.getCameraFormControl().clear().type('0');\ntaskPage.getAddCameraBtn().should('be.visible').click();\ntaskPage.getBasketSummary().should(function ($basketSummary) {\n    expect($basketSummary.eq(0)).to.contain('Łączna ilość produktów:');\n    expect($basketSummary.eq(1)).to.contain('Do zapłaty:');\n});\nce.getMainReset().click();",
               "err": {},
-              "uuid": "7d9076a3-800f-4971-83cd-4a354cd04760",
-              "parentUUID": "61c666a9-2fd5-4dac-9305-458869c0bef4",
+              "uuid": "39c864e9-2f23-42cd-9bc7-edd6d8f7ae3a",
+              "parentUUID": "84147986-ab6c-4ad1-a273-7a4e8f4a0f87",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7d9076a3-800f-4971-83cd-4a354cd04760"
+            "39c864e9-2f23-42cd-9bc7-edd6d8f7ae3a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2784,
+          "duration": 4020,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "da6dcf4f-d28e-47d3-be46-5db3cee8643a",
+      "uuid": "6f086ec5-7d6e-4df0-84a7-04777bd89237",
       "title": "",
       "fullFile": "cypress\\integration\\E2E\\taskPage2.ts",
       "file": "cypress\\integration\\E2E\\taskPage2.ts",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "687efd7b-8154-4216-9e27-df32d4242c8e",
+          "uuid": "93783380-fae5-484b-9b1d-685dca32cee4",
           "title": "Zadanie 2 Page",
           "fullFile": "",
           "file": "",
@@ -96,7 +96,7 @@
               "title": "Should test of Zadanie 2",
               "fullTitle": "Zadanie 2 Page Should test of Zadanie 2",
               "timedOut": null,
-              "duration": 2368,
+              "duration": 3170,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -105,20 +105,20 @@
               "context": null,
               "code": "ce.getOpenDetails().click();\nce.getClose().click();\ntaskPage.getSelectionPlaceholder().should('have.text', 'Proszę wybrać kategorie').click();\ntaskPage.getChooseProduct().should(function ($chooseProduct) {\n    expect($chooseProduct.eq(0)).to.contain('');\n    expect($chooseProduct.eq(1)).to.contain('Sport');\n    expect($chooseProduct.eq(2)).to.contain('Elektronika');\n    expect($chooseProduct.eq(3)).to.contain('Firma i usługi');\n});\ntaskPage.getInputChooseProduct().type('Sport{enter}');\ntaskPage.getSelectionArrow().click();\ntaskPage.getInputChooseProduct().clear().type('Elektronika{enter}');\ntaskPage.getSelectionArrow().click();\ntaskPage.getInputChooseProduct().clear().type('Firma i usługi{enter}');\nce.getMainReset().click();",
               "err": {},
-              "uuid": "06831535-6128-43bd-bd04-49b0c4d9610d",
-              "parentUUID": "687efd7b-8154-4216-9e27-df32d4242c8e",
+              "uuid": "9fdaf72e-b463-4f25-8669-28238288c211",
+              "parentUUID": "93783380-fae5-484b-9b1d-685dca32cee4",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "06831535-6128-43bd-bd04-49b0c4d9610d"
+            "9fdaf72e-b463-4f25-8669-28238288c211"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2368,
+          "duration": 3170,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -134,7 +134,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "65ef2cac-a3c4-4d75-a673-3396eeaa60b2",
+      "uuid": "b84ddd3d-78c5-4efe-b884-113e9919cdab",
       "title": "",
       "fullFile": "cypress\\integration\\E2E\\taskPage3.ts",
       "file": "cypress\\integration\\E2E\\taskPage3.ts",
@@ -143,7 +143,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "db28d948-b9cb-4790-9ea7-5e87772f8a54",
+          "uuid": "26417519-a82b-4185-a098-050ae9839226",
           "title": "Zadanie 3 Page",
           "fullFile": "",
           "file": "",
@@ -154,33 +154,29 @@
               "title": "Should test of Zadanie 3",
               "fullTitle": "Zadanie 3 Page Should test of Zadanie 3",
               "timedOut": null,
-              "duration": 13609,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 4120,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
               "context": null,
-              "code": "ce.getOpenDetails().click();\nce.getClose().click();\ntaskPage.getMenuBtn().should('be.visible').click();\ntaskPage.getItemForm().click({ force: true });\ntaskPage.getCaretRight().click({ force: true });\ntaskPage.getEditMode().click({ force: true });\nce.getUserData().then(function (user) {\n    taskPage.getInputName().clear().type(user.name);\n    taskPage.getInputSurname().clear().type(user.surname);\n    taskPage.getTextAreaNotes().clear().type(user.notes);\n    taskPage.getInputPhone().clear().type(user.phone);\n});\ntaskPage.getUploadfileBtn().click();\ncy.fixture('tor').as('torJpg');\ntaskPage.getSaveBtn().click();\n/*ce.getMainReset().click();*/",
-              "err": {
-                "message": "CypressError: Timed out retrying: `cy.click()` failed because the center of this element is hidden from view:\n\n`<input id=\"in-file\" type=\"file\" accept=\"image/x-png, image/gif, image/jpeg\">`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
-                "estack": "CypressError: Timed out retrying: `cy.click()` failed because the center of this element is hidden from view:\n\n`<input id=\"in-file\" type=\"file\" accept=\"image/x-png, image/gif, image/jpeg\">`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at $Cy.ensureDescendents (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:161335:24)\n    at ensureDescendents (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:149885:8)\n    at ensureDescendentsAndScroll (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:149892:14)\n    at ensureElIsNotCovered (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:150026:5)\n    at runAllChecks (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:150172:52)\n    at retryActionability (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:150195:16)\n    at tryCatcher (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:10584:23)\n    at Function.Promise.attempt.Promise.try (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:7858:29)\n    at tryFn (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:165607:21)\n    at whenStable (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:165645:12)\n    at https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:165140:16\n    at tryCatcher (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:10584:23)\n    at Promise._settlePromiseFromHandler (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:8519:31)\n    at Promise._settlePromise (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:8576:18)\n    at Promise._settlePromise0 (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:8621:10)\n    at Promise._settlePromises (https://testingcup.pgs-soft.com/__cypress/runner/cypress_runner.js:8701:18)\nFrom Your Spec Code:\n    at Context.eval (https://testingcup.pgs-soft.com/__cypress/tests?p=cypress\\integration\\E2E\\taskPage3.ts:38:37)",
-                "diff": null
-              },
-              "uuid": "a7341487-331c-4a27-acd7-966020ca820b",
-              "parentUUID": "db28d948-b9cb-4790-9ea7-5e87772f8a54",
+              "code": "ce.getOpenDetails().click();\nce.getClose().click();\ntaskPage.getMenuBtn().should('be.visible').click();\ntaskPage.getItemForm().click({ force: true });\ntaskPage.getCaretRight().click({ force: true });\ntaskPage.getEditMode().click({ force: true });\nce.getUserData().then(function (user) {\n    taskPage.getInputName().clear().type(user.name);\n    taskPage.getInputSurname().clear().type(user.surname);\n    taskPage.getTextAreaNotes().clear().type(user.notes);\n    taskPage.getInputPhone().clear().type(user.phone);\n});\n/* taskPage.getUploadfileBtn().click()\n cy.fixture('tor').as('torJpg')\n     */\ntaskPage.getSaveBtn().click();\n/*ce.getMainReset().click();*/",
+              "err": {},
+              "uuid": "f12d04bc-79b9-4bff-8d24-3bb501629636",
+              "parentUUID": "26417519-a82b-4185-a098-050ae9839226",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "a7341487-331c-4a27-acd7-966020ca820b"
+          "passes": [
+            "f12d04bc-79b9-4bff-8d24-3bb501629636"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13609,
+          "duration": 4120,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -196,7 +192,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "ea09cdf3-279b-442b-81b4-afcc6611d235",
+      "uuid": "b9cc6a0c-45c8-45f9-8d9b-dd9de7dbf98f",
       "title": "",
       "fullFile": "cypress\\integration\\E2E\\taskPage4.ts",
       "file": "cypress\\integration\\E2E\\taskPage4.ts",
@@ -205,7 +201,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "f404afd3-8a12-4324-8aa0-34c76ef60a36",
+          "uuid": "baa1935a-970a-4875-b510-67b867248f7e",
           "title": "Zadanie 4 Page",
           "fullFile": "",
           "file": "",
@@ -216,7 +212,7 @@
               "title": "Should Clicking the Apply button opens a new browser window with the form",
               "fullTitle": "Zadanie 4 Page Should Clicking the Apply button opens a new browser window with the form",
               "timedOut": null,
-              "duration": 1368,
+              "duration": 1470,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -225,8 +221,8 @@
               "context": null,
               "code": "ce.getOpenDetails().click();\nce.getClose().click();\ntaskPage.getApplyBtn().click();",
               "err": {},
-              "uuid": "70224669-9f18-4d8c-9ce0-96c957a1f54b",
-              "parentUUID": "f404afd3-8a12-4324-8aa0-34c76ef60a36",
+              "uuid": "e38ee0f2-d7c9-474f-a4d3-ac5ea3e00740",
+              "parentUUID": "baa1935a-970a-4875-b510-67b867248f7e",
               "isHook": false,
               "skipped": false
             },
@@ -234,7 +230,7 @@
               "title": "Should be complete the form and send the form",
               "fullTitle": "Zadanie 4 Page Should be complete the form and send the form",
               "timedOut": null,
-              "duration": 1314,
+              "duration": 1193,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -243,21 +239,21 @@
               "context": null,
               "code": "taskPage = index_1.Navigation.taskPage4_frame();\nce.getUserData().then(function (user) {\n    taskPage.getInputName().type(user.name);\n    taskPage.getInputEmail().type(user.email);\n    taskPage.getInputPhone().type(user.phone);\n});\ntaskPage.getSaveBtn().click();\ntaskPage.getTexth1().should('have.text', text);",
               "err": {},
-              "uuid": "b7915905-ea37-4c3d-b2ea-1a79c4a1cdc4",
-              "parentUUID": "f404afd3-8a12-4324-8aa0-34c76ef60a36",
+              "uuid": "5ff388a0-c446-4441-a286-f99ebecd5f1f",
+              "parentUUID": "baa1935a-970a-4875-b510-67b867248f7e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "70224669-9f18-4d8c-9ce0-96c957a1f54b",
-            "b7915905-ea37-4c3d-b2ea-1a79c4a1cdc4"
+            "e38ee0f2-d7c9-474f-a4d3-ac5ea3e00740",
+            "5ff388a0-c446-4441-a286-f99ebecd5f1f"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2682,
+          "duration": 2663,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -273,7 +269,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "f88dbe66-a50b-4a08-aff7-81ec7f8ebbe4",
+      "uuid": "4003bc41-4db4-4ff7-bb2e-cdcec64e6254",
       "title": "",
       "fullFile": "cypress\\integration\\E2E\\mainPage.ts",
       "file": "cypress\\integration\\E2E\\mainPage.ts",
@@ -282,7 +278,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "5a2da8f0-a768-4fa7-bf46-77ae85b6723a",
+          "uuid": "483ae25d-68c3-4394-99ee-98d10e67df22",
           "title": "Main page",
           "fullFile": "",
           "file": "",
@@ -293,7 +289,7 @@
               "title": "Should show elements of main page",
               "fullTitle": "Main page Should show elements of main page",
               "timedOut": null,
-              "duration": 1360,
+              "duration": 1733,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -302,20 +298,20 @@
               "context": null,
               "code": "mainPage.getLogoAsta().should('be.visible');\nmainPage.getLogoAstaLink().should('have.attr', 'href', 'https://asta.pgs-soft.com/');\nmainPage.getLogoPgs().should('be.visible');\nmainPage.getTaskList().should(function ($tasklist) {\n    expect($tasklist.eq(0)).to.contain('Zadanie 1');\n    expect($tasklist.eq(1)).to.contain('Zadanie 2');\n    expect($tasklist.eq(2)).to.contain('Zadanie 3');\n    expect($tasklist.eq(3)).to.contain('Zadanie 4');\n    expect($tasklist.eq(4)).to.contain('Zadanie 5');\n    expect($tasklist.eq(5)).to.contain('Zadanie 6');\n    expect($tasklist.eq(6)).to.contain('Zadanie 7');\n    expect($tasklist.eq(7)).to.contain('Zadanie 8');\n    expect($tasklist.eq(8)).to.contain('Zadanie 9');\n    expect($tasklist.eq(9)).to.contain('Zadanie 10');\n});\nmainPage.getZadanie1().click();",
               "err": {},
-              "uuid": "3844727d-29ec-479c-9ee8-004d6d2b0016",
-              "parentUUID": "5a2da8f0-a768-4fa7-bf46-77ae85b6723a",
+              "uuid": "6a87ff3b-e58b-4618-8da1-7e6830172da4",
+              "parentUUID": "483ae25d-68c3-4394-99ee-98d10e67df22",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3844727d-29ec-479c-9ee8-004d6d2b0016"
+            "6a87ff3b-e58b-4618-8da1-7e6830172da4"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1360,
+          "duration": 1733,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

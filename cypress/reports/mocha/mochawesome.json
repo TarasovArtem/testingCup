@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2020-12-08T20:05:47.765Z",
-    "end": "2020-12-08T20:05:49.158Z",
-    "duration": 1393,
+    "start": "2020-12-18T09:05:22.307Z",
+    "end": "2020-12-18T09:05:24.069Z",
+    "duration": 1762,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f88dbe66-a50b-4a08-aff7-81ec7f8ebbe4",
+      "uuid": "4003bc41-4db4-4ff7-bb2e-cdcec64e6254",
       "title": "",
       "fullFile": "cypress\\integration\\E2E\\mainPage.ts",
       "file": "cypress\\integration\\E2E\\mainPage.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "5a2da8f0-a768-4fa7-bf46-77ae85b6723a",
+          "uuid": "483ae25d-68c3-4394-99ee-98d10e67df22",
           "title": "Main page",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should show elements of main page",
               "fullTitle": "Main page Should show elements of main page",
               "timedOut": null,
-              "duration": 1360,
+              "duration": 1733,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "mainPage.getLogoAsta().should('be.visible');\nmainPage.getLogoAstaLink().should('have.attr', 'href', 'https://asta.pgs-soft.com/');\nmainPage.getLogoPgs().should('be.visible');\nmainPage.getTaskList().should(function ($tasklist) {\n    expect($tasklist.eq(0)).to.contain('Zadanie 1');\n    expect($tasklist.eq(1)).to.contain('Zadanie 2');\n    expect($tasklist.eq(2)).to.contain('Zadanie 3');\n    expect($tasklist.eq(3)).to.contain('Zadanie 4');\n    expect($tasklist.eq(4)).to.contain('Zadanie 5');\n    expect($tasklist.eq(5)).to.contain('Zadanie 6');\n    expect($tasklist.eq(6)).to.contain('Zadanie 7');\n    expect($tasklist.eq(7)).to.contain('Zadanie 8');\n    expect($tasklist.eq(8)).to.contain('Zadanie 9');\n    expect($tasklist.eq(9)).to.contain('Zadanie 10');\n});\nmainPage.getZadanie1().click();",
               "err": {},
-              "uuid": "3844727d-29ec-479c-9ee8-004d6d2b0016",
-              "parentUUID": "5a2da8f0-a768-4fa7-bf46-77ae85b6723a",
+              "uuid": "6a87ff3b-e58b-4618-8da1-7e6830172da4",
+              "parentUUID": "483ae25d-68c3-4394-99ee-98d10e67df22",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3844727d-29ec-479c-9ee8-004d6d2b0016"
+            "6a87ff3b-e58b-4618-8da1-7e6830172da4"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1360,
+          "duration": 1733,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
