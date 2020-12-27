@@ -1,9 +1,17 @@
 /// <reference types="Cypress" />
 
 class CommonElemetns {
+    getRoot() {
+        return cy.root();
+    }
+
     getUserData() {
         return cy.fixture('userData');
     } 
+
+    getLogin() {
+        return cy.fixture('login');
+    }
     
     getOpenDetails() {
         return cy.get('.open-details');

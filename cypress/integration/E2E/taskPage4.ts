@@ -1,12 +1,30 @@
+/// <reference types="Cypress" />
+
 import { TaskPage4, Navigation } from '../../pageObject/index';
 import { CommonElemetns } from '../../pageObject/index';
 
+/*
+Completing a form in a separate functionality description window:
+
+# Clicking the Apply button opens a new browser window with the form.
+
+# It is possible to complete the form and send the form.
+
+# Required fields in the form are:
+
+  * Name - limited to 50 characters;
+  
+  * Email (in format a@b.pl, otherwise you will see information about the need to enter data in the appropriate format) - limit to 50 characters;
+  
+  * Telephone number (in the format 600-100-200);
+
+#After sending the completed form by clicking the "Send" button, the corresponding information appears indicating the success of the action performed.
+*/
 
 describe('Zadanie 4 Page', () => {
   
   let taskPage = new TaskPage4();
   let ce = new CommonElemetns();
-  let text = 'Wiadomość została wysłana';
   
 
   beforeEach(() => {
@@ -30,7 +48,8 @@ describe('Zadanie 4 Page', () => {
       taskPage.getInputPhone().type(user.phone);
     })  
     taskPage.getSaveBtn().click();
-    taskPage.getTexth1().should('have.text', text);
-
+    ce.getUserData().then((user) => {
+    taskPage.getTexth1().should('have.text', user.text);
+    }) 
   })
 })

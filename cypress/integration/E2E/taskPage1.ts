@@ -3,6 +3,17 @@
 import { TaskPage1, Navigation } from '../../pageObject/index';
 import { CommonElemetns } from '../../pageObject/index';
 
+/*
+Add a product to basketdescription of functionality:
+
+# You can add a product to your shopping cart by clicking on the " Add " button located in the field with the product in the product list.
+
+# The amount of products will be added to the basket, selected using the up-down arrows (which appear when the edit field is highlighted) 
+  or by typing the amount of products in the edit field using the keyboard.
+
+# The total number of products in the basket can not exceed 100.
+*/ 
+
 
 describe('Zadanie 1 Page', () => {
   
@@ -19,15 +30,15 @@ describe('Zadanie 1 Page', () => {
 
       taskPage.getGlassesFormControl().clear().type('15');
       taskPage.getAddGlassesBtn().should('be.visible').click();
-      taskPage.getQuantityForGlasses().should('have.text', '15');
+      taskPage.getQuantityForGlasses().should('have.text', '15');  
 
       taskPage.getBallFormControl().clear().type('15');
       taskPage.getAddBallBtn().should('be.visible').click();
 
-      taskPage.getCameraFormControl().clear().type('101');
+      taskPage.getCameraFormControl().clear().type('101'); // Entering a larger value
       taskPage.getAddCameraBtn().should('be.visible').click();
 
-      taskPage.getCameraFormControl().clear().type('0');
+      taskPage.getCameraFormControl().clear().type('0'); // Entering the lowest value
       taskPage.getAddCameraBtn().should('be.visible').click();
 
       taskPage.getBasketSummary().should(($basketSummary: any) => {
@@ -37,14 +48,6 @@ describe('Zadanie 1 Page', () => {
 
       ce.getMainReset().click();
     })
-
-
-  
-
-
-
-
-
 });
 
 

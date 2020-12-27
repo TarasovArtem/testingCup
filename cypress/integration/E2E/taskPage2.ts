@@ -3,6 +3,17 @@
 import { TaskPage2, Navigation } from '../../pageObject/index';
 import { CommonElemetns } from '../../pageObject/index';
 
+/*
+Filtering products by categoryfunction description:
+
+# A list of available categories along with the search box appears when you click in the 'Please select categories' box.
+
+# The search includes a hint system, i.e. after typing a few characters, a category with a name containing the entered phrase or text fragment is displayed.
+
+# The hint function maps the entered phrase also to polish characters, for example, after typing "saw" we would get the hint "ball".
+
+# Product filtering occurs when a category is selected. Only those that belong to the category are displayed.
+*/ 
 
 describe('Zadanie 2 Page', () => {
   

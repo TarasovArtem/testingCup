@@ -1,5 +1,6 @@
 /// <reference types="Cypress" />
 import MainPage from './mainPage';
+import LoginForm from './loginForm'
 import TaskPage1 from './taskPage1';
 import TaskPage2 from './taskPage2';
 import TaskPage3 from './taskPage3';
@@ -9,6 +10,11 @@ import TaskPage4 from './taskPage4';
 
 
 class Navigation {
+    static loginForm(): LoginForm {
+        cy.visit('/task_6');
+        return new LoginForm
+    }
+
     static mainPage(): MainPage {
         cy.visit('/');
         return new MainPage;
