@@ -1,5 +1,8 @@
 {
   "login": "tester",
   "email": "hello@cypress.io",
-  "password": "123-xyz"
+  "password": "123-xyz",
+  "fakeLogin": "humster",
+  "fakePassword": "12345",
+  "error": "Nieprawidłowe dane logowania"
 }

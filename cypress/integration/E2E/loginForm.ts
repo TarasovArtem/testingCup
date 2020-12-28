@@ -29,10 +29,9 @@ describe('Zadanie 6 Login Form', () => {
         loginForm = Navigation.loginForm();
     })
   
-  it('Should test of Zadanie 1', () => {
-    ce.getOpenDetails().click();
+  it('Should test of Zadanie 6, fill in the login form', () => {
+    ce.getOpenDetails().click(); // open the test case
     ce.getClose().click();
-
 
     loginForm.getLoginForm().within(($form) => {
       ce.getLogin().then((login) => {
@@ -41,9 +40,19 @@ describe('Zadanie 6 Login Form', () => {
         ce.getRoot().submit(login);  
       })  
     })
-    // To log in, fill in the login form with the appropriate information, and then click the 'login' button
-
+    //loginForm.getDownloadFile().click(); // Button "Download File"
+    loginForm.getLogOut().click();
+  })
     
+  it('Should fill in the login form with the fake information', () => {  
+    loginForm.getLoginForm().within(($form) => {
+      ce.getLogin().then((login) => {
+        loginForm.getInputlogin().type(login.fakeLogin);
+        loginForm.getInputPassword().type(login.fakePassword);
+        ce.getRoot().submit(login);
+      })  
+    }) 
+    cy.screenshot('Login error');
 
   })
       
