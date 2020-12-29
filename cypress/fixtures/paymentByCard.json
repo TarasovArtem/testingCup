@@ -1,0 +1,94 @@
+
+{
+  "CVV": "123",
+
+  "NameCardUser": "Daniel",
+
+  "AmericanExpress":	{
+    "type": "American Express",
+    "number1": "378282246310005",
+    "number2":"371449635398431"
+  },
+
+  "AmericanExpressCorporate":	{
+    "type": "American Express Corporate",
+    "number": "378734493671000"
+  },
+
+  "AustralianBankCard":	{
+    "type": "Australian Bank Card",
+    "number": "5610591081018250"
+  },
+
+  "DinersClub": {
+  "type": "Diners Club",
+  "number1": "30569309025904",
+  "number2": "38520000023237"
+  },
+
+  "Discover":	{
+    "type": "Discover",
+    "number1": "6011111111111117",
+    "number2": "6011000990139424"
+  },
+
+  "JCB":	{
+    "type": "JCB",
+    "number1": "3530111333300000",
+    "number2": "3566002020360505"
+  },
+
+  "MasterCard": {
+    "type": "MasterCard",
+    "number1": "5555555555554444",
+    "number2": "5105105105105100"
+  },
+
+  "Visa":	{
+    "type": "Visa",
+    "number1": "4111111111111111",
+    "number2": "4012888888881881",
+    "number3": "4222222222222"
+  },
+
+  "Dankort(PBS)":	{
+    "type": "Dankort (PBS)",
+    "number1": "76009244561",
+    "number2": "5019717010103742"
+  },
+
+  "Switch/Solo(Paymentech)": {	
+    "type": "Switch/Solo (Paymentech)",
+    "number": "6331101999990016"
+  },
+
+  "Month": {
+    "January": "January",
+    "February": "February",
+    "March": "March",
+    "April": "April",
+    "May": "May",
+    "June": "June",
+    "July": "July",
+    "August": "August",
+    "September": "September",
+    "October": "October",
+    "November": "November",
+    "December": "December"
+  },
+
+  "Year": {
+    "Year2020": "2020",
+    "Year2021": "2021",
+    "Year2022": "2022",
+    "Year2023": "2023",
+    "Year2024": "2024",
+    "Year2025": "2025",
+    "Year2026": "2026",
+    "Year2027": "2027",
+    "Year2028": "2028",
+    "Year2029": "2029",
+    "Year2030": "2030"
+  }
+
+}

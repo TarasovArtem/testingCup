@@ -1,4 +1,4 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 
 import { MainPage, Navigation } from '../../pageObject/index';
 
@@ -10,9 +10,9 @@ describe('Main page', () => {
     
 
     beforeEach(() => {
-
         mainPage = Navigation.mainPage()
     })
+
     it('Should show elements of main page', () => {
         mainPage.getLogoAsta().should('be.visible');
         mainPage.getLogoAstaLink().should('have.attr', 'href', 'https://asta.pgs-soft.com/');
@@ -29,9 +29,7 @@ describe('Main page', () => {
             expect($tasklist.eq(7)).to.contain('Zadanie 8')
             expect($tasklist.eq(8)).to.contain('Zadanie 9')
             expect($tasklist.eq(9)).to.contain('Zadanie 10')
-          });
-        
+          });        
         mainPage.getZadanie1().click();   
-
     })
 })

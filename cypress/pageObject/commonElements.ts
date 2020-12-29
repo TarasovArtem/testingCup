@@ -1,6 +1,7 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 
 class CommonElemetns {
+
     getRoot() {
         return cy.root();
     }
@@ -11,6 +12,10 @@ class CommonElemetns {
 
     getLogin() {
         return cy.fixture('login');
+    }
+
+    getPayment() {
+        return cy.fixture('paymentByCard');
     }
     
     getOpenDetails() {

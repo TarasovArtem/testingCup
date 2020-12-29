@@ -1,7 +1,6 @@
 /// <reference types="Cypress" />
 
-import { TaskPage1, Navigation } from '../../pageObject/index';
-import { CommonElemetns } from '../../pageObject/index';
+import { TaskPage1, Navigation, CommonElemetns } from '../../pageObject/index';
 
 /*
 Add a product to basketdescription of functionality:
@@ -17,38 +16,38 @@ Add a product to basketdescription of functionality:
 
 describe('Zadanie 1 Page', () => {
   
-  let taskPage = new TaskPage1();
-  let ce = new CommonElemetns();
+    let taskPage = new TaskPage1();
+    let ce = new CommonElemetns();
 
     beforeEach(() => {
         taskPage = Navigation.taskPage1();
     })
   
     it('Should test of Zadanie 1', () => {
-      ce.getOpenDetails().click();
-      ce.getClose().click();
+        ce.getOpenDetails().click();
+        ce.getClose().click();
+  
+        taskPage.getGlassesFormControl().clear().type('15');
+        taskPage.getAddGlassesBtn().should('be.visible').click();
+        taskPage.getQuantityForGlasses().should('have.text', '15');  
+  
+        taskPage.getBallFormControl().clear().type('15');
+        taskPage.getAddBallBtn().should('be.visible').click();
+  
+        taskPage.getCameraFormControl().clear().type('101'); // Entering a larger value
+        taskPage.getAddCameraBtn().should('be.visible').click();
+  
+        taskPage.getCameraFormControl().clear().type('0'); // Entering the lowest value
+        taskPage.getAddCameraBtn().should('be.visible').click();
+  
+        taskPage.getBasketSummary().should(($basketSummary: any) => {
+            expect($basketSummary.eq(0)).to.contain('Łączna ilość produktów:');
+            expect($basketSummary.eq(1)).to.contain('Do zapłaty:');
+        })
 
-      taskPage.getGlassesFormControl().clear().type('15');
-      taskPage.getAddGlassesBtn().should('be.visible').click();
-      taskPage.getQuantityForGlasses().should('have.text', '15');  
-
-      taskPage.getBallFormControl().clear().type('15');
-      taskPage.getAddBallBtn().should('be.visible').click();
-
-      taskPage.getCameraFormControl().clear().type('101'); // Entering a larger value
-      taskPage.getAddCameraBtn().should('be.visible').click();
-
-      taskPage.getCameraFormControl().clear().type('0'); // Entering the lowest value
-      taskPage.getAddCameraBtn().should('be.visible').click();
-
-      taskPage.getBasketSummary().should(($basketSummary: any) => {
-        expect($basketSummary.eq(0)).to.contain('Łączna ilość produktów:')
-        expect($basketSummary.eq(1)).to.contain('Do zapłaty:')
-      });
-
-      ce.getMainReset().click();
+        ce.getMainReset().click();
     })
-});
+})
 
 
 

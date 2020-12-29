@@ -1,7 +1,6 @@
-/// <reference types="Cypress" />
+/// <reference types="cypress" />
 
-import { LoginForm, Navigation } from '../../pageObject/index';
-import { CommonElemetns } from '../../pageObject/index';
+import { LoginForm, Navigation, CommonElemetns } from '../../pageObject/index';
 
 /*
 Downloading a filedescription of functionality:
@@ -22,39 +21,37 @@ Downloading a filedescription of functionality:
 
 describe('Zadanie 6 Login Form', () => {
   
-  let loginForm = new LoginForm();
-  let ce = new CommonElemetns();
-
+    let loginForm = new LoginForm();
+    let ce = new CommonElemetns();
+  
     beforeEach(() => {
         loginForm = Navigation.loginForm();
     })
   
-  it('Should test of Zadanie 6, fill in the login form', () => {
-    ce.getOpenDetails().click(); // open the test case
-    ce.getClose().click();
-
-    loginForm.getLoginForm().within(($form) => {
-      ce.getLogin().then((login) => {
-        loginForm.getInputlogin().type(login.login);
-        loginForm.getInputPassword().type(login.password);
-        ce.getRoot().submit(login);  
-      })  
-    })
-    //loginForm.getDownloadFile().click(); // Button "Download File"
-    loginForm.getLogOut().click();
-  })
+    it('Should test of Zadanie 6, fill in the login form', () => {
+        ce.getOpenDetails().click(); // open the test case
+        ce.getClose().click();
     
-  it('Should fill in the login form with the fake information', () => {  
-    loginForm.getLoginForm().within(($form) => {
-      ce.getLogin().then((login) => {
-        loginForm.getInputlogin().type(login.fakeLogin);
-        loginForm.getInputPassword().type(login.fakePassword);
-        ce.getRoot().submit(login);
-      })  
-    }) 
-    cy.screenshot('Login error');
-
-  })
+        loginForm.getLoginForm().within(($form) => {
+            ce.getLogin().then((login) => {
+              loginForm.getInputlogin().type(login.login);
+              loginForm.getInputPassword().type(login.password);
+              ce.getRoot().submit(login);  
+            })  
+        })
+        //loginForm.getDownloadFile().click(); // Button "Download File"
+        loginForm.getLogOut().click();
+    })
       
-});
+    it('Should fill in the login form with the fake information', () => {  
+        loginForm.getLoginForm().within(($loginForm) => {
+            ce.getLogin().then((login) => {
+              loginForm.getInputlogin().type(login.fakeLogin);
+              loginForm.getInputPassword().type(login.fakePassword);
+              ce.getRoot().submit(login);
+            })  
+        }) 
+        cy.screenshot('Login error');
+    })     
+})
 
