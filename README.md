@@ -28,6 +28,6 @@ Install dependencies by running the following command in terminal (from inside y
 Mochawesome is a custom reporter for use with the Javascript testing framework, mocha. 
 It runs on Node.js and works in conjunction with mochawesome-report-generator to generate a standalone HTML/CSS report to helps visualize your test runs.
 
-* npm run test ( this command runs the Mochawesome and creat the HTML report )
+* npm run test ( this command runs the Mochawesome and create the HTML report )
 
 
