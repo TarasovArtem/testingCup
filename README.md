@@ -1,4 +1,4 @@
-# testingCup #
+# Testing Cup #
 
 # Automated Software Testing Arena (ASTA) 
 
