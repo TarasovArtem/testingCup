@@ -3,7 +3,7 @@
 import { TaskPage1, Navigation, CommonElemetns } from '../../pageObject/index';
 
 /*
-Add a product to basketdescription of functionality:
+TODO: Add a product to basketdescription of functionality:
 
 # You can add a product to your shopping cart by clicking on the " Add " button located in the field with the product in the product list.
 

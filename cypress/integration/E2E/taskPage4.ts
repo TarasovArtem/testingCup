@@ -3,7 +3,7 @@
 import { TaskPage4, Navigation, CommonElemetns } from '../../pageObject/index';
 
 /*
-Completing a form in a separate functionality description window:
+TODO: Completing a form in a separate functionality description window:
 
 # Clicking the Apply button opens a new browser window with the form.
 

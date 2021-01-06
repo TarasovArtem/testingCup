@@ -3,7 +3,7 @@
 import { Payment, Navigation, CommonElemetns } from '../../pageObject/index';
 
 /*
-Payment by card description of functionality:
+TODO: Payment by card description of functionality:
 
 # The available form allows you to pay with different payment cards (list of supported cards in the link below).
 
@@ -39,6 +39,6 @@ describe('Zadanie 8, Payment by card', () => {
             })
         })
         cy.url().should('include', 'task_8');
-        cy.screenshot('Order paid');
+        cy.screenshot('Order paid'); 
     })      
 })

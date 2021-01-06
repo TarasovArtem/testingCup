@@ -3,7 +3,7 @@
 import { LoginForm, Navigation, CommonElemetns } from '../../pageObject/index';
 
 /*
-Downloading a filedescription of functionality:
+TODO: Downloading a filedescription of functionality:
 
 # Downloading the file is possible after logging into the application. To log in, fill in the login form with the appropriate information, and then click the 'login' button or use the Enter key. In case of incorrect completion, an error message appears.
 
@@ -39,7 +39,7 @@ describe('Zadanie 6 Login Form', () => {
               ce.getRoot().submit(login);  
             })  
         })
-        //loginForm.getDownloadFile().click(); // Button "Download File"
+        // * loginForm.getDownloadFile().click(); // Button "Download File"
         loginForm.getLogOut().click();
     })
       

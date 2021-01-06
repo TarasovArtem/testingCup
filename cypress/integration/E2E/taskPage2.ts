@@ -3,7 +3,7 @@
 import { TaskPage2, Navigation, CommonElemetns  } from '../../pageObject/index';
 
 /*
-Filtering products by categoryfunction description:
+TODO: Filtering products by categoryfunction description:
 
 # A list of available categories along with the search box appears when you click in the 'Please select categories' box.
 
